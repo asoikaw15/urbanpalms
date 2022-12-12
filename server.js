@@ -23,10 +23,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 //mongoes are open database connection
 
-const store = new MongoStore({
-    mongoUrl: process.env.database,
-    touchAfter: 24 * 60 * 60
-})
+
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.listen(process.env.port || 3000, () => {
