@@ -27,7 +27,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.listen(process.env.port || 3000, () => {
-    mongoose.connect(process.env.database)
+    mongoose.connect(process.env.DATABASE)
     mongoose.connection.on("error", console.error.bind(console, "Connection Error"))
     mongoose.connection.once("open", () => {
         console.log("database connected")
