@@ -1,0 +1,25 @@
+<%- include('../boilerplate/header.ejs') %>
+    <h1 align="center">Edit <%=editSpace.name %>
+    </h1>
+    <div class="container">
+        <form id="edit-room" class="w-50 mx-auto">
+            <label for="roomName">Room Name</label>
+            <input type="text" class="form-control" name="roomName" placeholder="<%=editSpace.name%>" />
+            <label for="pricePerNight">Price(per Night)</label>
+            <input type="number" class="form-control w-50" name="pricePerNight"
+                placeholder="<%=editSpace.pricePerNight%>" />
+            <label for="address">address</label>
+            <textarea name="address" form="edit-room" class="form-control" rows="4" cols="50"
+                placeholder="<%=editSpace.address%>"></textarea>
+            <label for="isOccupied">Occupied?</label>
+            <% if (editSpace.isOccupied===true) {%>
+                <input type="checkbox" class="" name="isOccupied" id="isOccupied" checked />
+                <%} else {%>
+                    <input type="checkbox" class="" name="isOccupied" id="isOccupied" />
+                    <%}%>
+
+        </form>
+    </div>
+
+
+    <%- include('../boilerplate/footer.ejs') %>

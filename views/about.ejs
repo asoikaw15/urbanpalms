@@ -1,0 +1,127 @@
+<%- include('./boilerplate/header.ejs') %>
+  <!-- Hospitality -->
+  <div class="container-fluid mb-5">
+    <div class="row title-row">
+      <div class="col-lg-8 col-sm-12 title-column " data-aos="fade-right" data-aos-duration="1200">
+        <h1>Hospitality</h1>
+        <p>We are committed to providing superior service for all our guests by welcoming them, creating lasting
+          relationships and rewarding the experience. Like family to you, we treat every person who walks through our
+          doors as a treasured guest.</p>
+      </div>
+    </div>
+    <div class="row image">
+      <div class="col-lg-12 image-wrapper">
+        <img src="images/hero-image.jpg" data-aos="fade-in" data-aos-duration="1200" />
+      </div>
+    </div>
+  </div>
+  <!-- Hospitality End -->
+  <!-- Mission -->
+  <div class="my-5 container">
+    <div class="text-center " data-aos="fade-up" data-aos-duration="1200">
+      <h2>OUR MISSION</h2>
+      <p>Our mission is to help you enjoy your travels and make the most of your staycation. Our goal is to make sure
+        you have a memorable experience in every aspect of your trip.We are here to create unique and memorable
+        experiences for our guests. You'll feel like you're at home. With the best service and high-end amenities, we
+        strive to make your stay with us comfortable enough to return again and again.</p>
+    </div>
+    <div class="container">
+      <div class="row mission">
+        <div class="col mission-left" data-aos="fade-right" data-aos-duration="1200">
+          <img src="/images/pexels-max-vakhtbovych-6585763.jpg" alt="">
+        </div>
+        <div class="col mission-right" data-aos="fade-left" data-aos-duration="1200">
+          <img src="/images/pexels-max-vakhtbovych-7005291.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mission end -->
+  <!-- Discoveries -->
+  <div class="container about-discoveries px-0" data-aos="fade-up" data-aos-duration="1200">
+    <h2 class="text-center mt-5">DISCOVERIES</h2>
+    <p class="text-center">Our goal is to create a warm and welcoming environment that supports our guests every step of
+      their stay. We strive to create an environment that inspires adventure and inspires guests to explore more of the
+      world around them</p>
+    <div class="row justify-content-center mt-5">
+      <%for (let i=0;i<5;i++) {%>
+        <%if(i> 2) {%>
+          <div class="col-lg-4 col-sm-10 d-flex justify-content-center my-5" data-aos="fade-up"
+            data-aos-duration="1200">
+            <%} else {%>
+              <div class="col-lg-4 col-sm-10 d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1200">
+                <%}%>
+
+                  <div class="card bg-transparent border-0">
+                    <img src='<%=aboutProperty[i].image[0].url%>' class="card-img-top" alt="..." height="450">
+                    <div class="card-body text-center">
+
+                      <p class="card-text">
+                      <h3>
+                        <%=aboutProperty[i].name%>
+                      </h3>
+                      <p>
+                        <%=aboutProperty[i].address%>
+                      </p>
+                      </p>
+                      <button class="px-5 py-3 border-0"><a href="#">EXPLORE SPACE</a></button>
+                    </div>
+                  </div>
+              </div>
+
+              <%}%>
+          </div>
+    </div>
+    <section class="container-fluid taking-time">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <img class="quote" src="/images/quote.png" />
+          <h2 data-aos="fade-up" data-aos-duration="1200">Taking time off is the best you can do for your
+            peace of mind.</h2>
+        </div>
+      </div>
+      <div class="row image align-items-center  plan-with-image">
+        <div class="col">
+          <h2 data-aos="fade-in" data-aos-duration="1200">Plan a stay with us today.</h2>
+          <a href="/book-now"
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/online_booking-kodego'});return false;">BOOK A
+            SPACE</a>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid hospitality-slides">
+      <div class="row justify-content-center reviews">
+        <div class="col-lg-6">
+          <div class="reviews-slide w-70"
+            data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": false, "autoplay":true,"autoplaySpeed": 2000}'>
+            <%for (let i=0;i<6;i++) {%>
+              <div>
+                <h3>
+                  <%=reviews[i].content%>
+                </h3>
+                <p>--Guest <%=reviews[i].review%>
+                </p>
+              </div>
+              <%}%>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="reviews-slide2 w-70"
+            data-slick='{"slidesToShow": 1, "slidesToScroll": 1,"arrows": false,"autoplay":true,"autoplaySpeed": 2000}'>
+            <%for (let i=6;i<11;i++) {%>
+              <div>
+                <h3>
+                  <%=reviews[i].content%>
+                </h3>
+                <p>--Guest <%=reviews[i].review%>
+                </p>
+              </div>
+              <%}%>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <%- include('./boilerplate/footer.ejs') %>

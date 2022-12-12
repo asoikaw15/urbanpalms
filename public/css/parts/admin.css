@@ -1,0 +1,28 @@
+.modal-content{
+    background-color: #343333;
+}
+/* -----------------------Admin Home--------------------------- */
+.admin-home table{
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 2rem 0;
+}
+.admin-home table thead th{
+    text-align: center;
+}
+.admin-home table td{
+    border: 1px solid #fff;
+}
+.admin-home table td img{
+    width: 100px;
+    border: 2px solid gray;
+    padding: 5px;
+}
+/* -----------------------Add Room--------------------------- */
+.add-room-form{
+    color:#4c4b4b;
+}
+
+input[type=number]{
+    width: 20%;
+}

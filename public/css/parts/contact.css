@@ -1,0 +1,18 @@
+.contact-featured-image{
+    background: url('/images/pexels-jonathan-borba-3167175.jpg');
+    height:50vh;
+}
+#contact .col{
+    padding: 2% 25%;
+   
+}
+.contact-row span, .contact-row i{
+    font-size: 2.3em;
+}
+.contact-row{
+    padding: 5% 20%;
+}
+.contact-row .col-6{
+    background-color:#d9d9d9;
+    color: #4c4b4b ;
+}

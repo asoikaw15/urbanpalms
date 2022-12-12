@@ -1,0 +1,11 @@
+footer .navbar-brand  h2{
+    display: none !important;
+}
+footer .social-icons{
+    padding: 12px;
+} 
+
+footer{
+    padding: 0 !important;
+    background-color: #4c4b4b;
+}

@@ -1,0 +1,18 @@
+.property_left img{
+    width: 100%;
+    margin-bottom: 5%;
+    height: 450px;
+}
+.property_right{
+    padding-left: 5%;
+}
+.property_right h2{
+    padding-top: 5%;
+}
+.amenities_pictures{
+    height: 80%;
+}
+.amenities_pictures img{
+    width: 100%;
+    padding: 2% 5%;
+}

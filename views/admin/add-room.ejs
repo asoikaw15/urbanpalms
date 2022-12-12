@@ -1,0 +1,26 @@
+<%- include('../boilerplate/header.ejs') %>
+    <div class="container text-center">
+        <h1>Add Room</h1>
+        <a href="/admin" class="btn btn-secondary">Go back to list</a>
+        <div class="container vh-100 bg-white p-5 text-start add-room-form">
+            <form class="w-50 mx-auto" id="add-room" method="POST" enctype="multipart/form-data">
+                <label for="name">Room Name</label>
+                <input type="text" class="form-control" name="name" />
+                <label for="roomNumber">Room No.</label>
+                <input type="number" class="form-control" name="roomNumber" />
+                <label for="pricePerNight">Price per night</label>
+                <i class="fa-solid fa-dollar-sign"></i><input type="number" class="form-control" name="pricePerNight"
+                    min="500" />
+                <label for="address">Address</label>
+                <textarea name="address" form="add-room" class="form-control" rows="4" cols="50"></textarea>
+                <label for="isOccupied">Occupied?</label>
+                <input type="checkbox" class="" name="isOccupied" id="isOccupied" />
+                <label for="image" class="d-block mt-2">Image</label>
+                <input type="file" name="image" multiple />
+                <button class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+    </div>
+
+    <%- include('../boilerplate/footer.ejs') %>

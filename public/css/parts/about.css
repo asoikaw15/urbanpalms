@@ -1,0 +1,42 @@
+/* ------------------------ABOUT----------------------------------- */
+.card-body button a{
+    text-decoration: none;
+    color: #343333;
+}
+#spaces{
+    margin-top: 60px;
+}
+#spaces .row{
+    gap:6%
+}
+
+.mission{
+    height: 75vh;
+}
+.mission-left{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    
+}
+.mission-left img{
+    width: 80%;
+    height: 100%;
+} 
+.mission-right{
+    position: relative;
+    
+}
+.mission-right img{
+    position: absolute;
+    width: 80%;
+    left: -6%;
+    top: 10%;
+    height: 100%;
+}
+.about-discoveries{
+    margin-top: 100px;
+}
+.about-discoveries .row:nth-child(3){
+    margin-top: 1rem;
+}

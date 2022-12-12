@@ -1,0 +1,63 @@
+/* -------------------------AMENITIES------------------------------- */
+.amenities-text .col-lg-6 p{
+    font-size: 1.4em;
+}
+.amenities-text .col-lg-6 h2{
+    font-size: 3.5em;
+}
+
+/* -------------------------PLAN WITH US------------------------------- */
+#plan-with-us{
+    text-align: center;
+    background-color: #d9d9d9 ;
+    color:#4c4b4b;
+}
+
+#plan-with-us .row{
+    padding: 5rem 0 4rem;
+}
+#plan-with-us .row h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+#plan-with-us .row a{
+    background-color: #4c4b4b;
+    padding: 1rem 2rem;
+    line-height: 3em;
+    text-decoration: none;
+    color: #fff;
+ 
+}
+.amenities_hero{
+    height: 75vh;
+    background: url(/images/pexels-max-vakhtbovych-6585763.jpg);
+    background-size: cover;
+    align-items: center;
+}
+.amenities_title{
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #343333;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+.amenities_features{
+    width: 70%;
+    margin: auto;
+}
+.amenities_features ul{
+    margin-top: 3%;
+}
+.amenities_features ul li{
+    margin-bottom: 2%;
+}
+hr{
+    margin: 5% auto;
+    background-color: #fff !important;
+    font-size: 10px;
+    border: 1.2px solid white;
+    width: 90%;
+    
+}

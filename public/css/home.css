@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,800;0,900;1,200;1,600;1,700;1,900&display=swap');
+@import url('./parts/navbar.css');
+@import url('./parts/hero.css');
+@import url('./parts/about.css');
+@import url('./parts/taking_time.css');
+@import url('./parts/amenities.css');
+@import url('./parts/slick.css');
+@import url('./parts/footer.css');
+@import url('./parts/property.css');
+@import url('./parts/admin.css');
+@import url('./parts/media_queries.css');
+@import url('./parts/contact.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif ;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    background: #343333;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,h2{
+    font-weight: 700;
+}
+h2{
+    font-size: 3em;
+}
+
+.button-hover{
+    transition: .5s;
+}
+.button-hover:hover, .button-hover:hover>a{
+    background-color: #474E68;
+    color: #fff !important;
+}
+#plan-with-us a{
+    transition: .5s;
+}
+#plan-with-us h2{
+    transition: .5s;
+}
+#plan-with-us h2:hover{
+    transform: scale(1.1);
+}
+#plan-with-us a:hover{
+    color: #343333;
+    background-color: #fff;
+}
+/* Media Queries */
+
+@media screen and (max-width:991px){
+    header .navbar{
+        flex-wrap: inherit;
+        padding: 0 3rem;
+    }
+
+    footer .navbar-brand h2{
+        display: block;
+    }
+    .book-now{
+        width: 100% !important;
+    }
+    .footer-social{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .reviews-slide, .reviews-slide2{
+        text-align: center;
+   
+    }
+    .reviews .reviews-slide h3, .reviews .reviews-slide2 h3{
+        width: 100%;
+    }
+    .image-with-text .about-text{
+        align-items: center !important;
+    }
+    #amenities .amenities-text .about-text{
+        margin: 2rem 0;
+    }
+    header .navbar{
+        flex-wrap: inherit;
+        padding: 0 0rem;
+    }
+    header .nav-items{
+        justify-content: flex-start !important;
+    }
+    header .nav-links{
+        align-items: center !important;
+    }
+    header .social-icons{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:415px) {
+    .title-row .title-column h1{
+        font-size: 2.5em;
+    }
+ 
+}

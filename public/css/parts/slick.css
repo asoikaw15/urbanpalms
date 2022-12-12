@@ -1,0 +1,9 @@
+.reviews .reviews-slide h3, .reviews .reviews-slide2 h3{
+    width: 75%;
+    FONT-SIZE: 2.5rem;
+    margin-bottom: 2rem;
+}
+.hospitality-slides{
+    background: #fff;
+    color: #4c4b4b;
+}

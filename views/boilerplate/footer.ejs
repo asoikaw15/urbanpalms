@@ -1,0 +1,89 @@
+</main>
+
+<footer class="container-fluid">
+    <nav class="navbar navbar-expand-lg text-center">
+        <div class="container-fluid navitems justify-content-center">
+            <h2 class="mt-4"><a class="navbar-brand" href="#"><img
+                        src="/images/Aesthetical Botanic Brand Name Circle Badge Logo-cropped.svg" alt=""></a>
+            </h2>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="logo">
+                    <a class="navbar-brand" href="#">
+                        <h2>Name of the site</h2>
+                    </a>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex navlinks">
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="/">SPACES</a></h3>
+                    </li>
+
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="/amenities">AMENITIES</a></h3>
+                    </li>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="/about">ABOUT</a></h3>
+                    </li>
+                    <li class="nav-item">
+                        <h3><a class="nav-link" href="/contact">CONTACT</a></h3>
+                    </li>
+                </ul>
+                <div class="social-icons">
+                    <h3><i class="fa-brands fa-facebook"></i></h3>
+                    <h3><i class="fa-brands fa-instagram"></i></h3>
+                </div>
+            </div>
+            <div class="book-now">
+                <button id="bookNow">BOOK NOW</button>
+            </div>
+
+    </nav>
+    <div>
+        <p align="center"> &#169; 2022 walkcondo.com</p>
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.reviews-slide').slick();
+        $('.reviews-slide2').slick();
+
+        $('#isOccupied').change(function () {
+            if ($('#isOccupied').prop('checked') === true) {
+                $('#isOccupied').val(true)
+            }
+            else if ($('#isOccupied').prop('checked') === false) {
+                $('#isOccupied').val(false)
+
+            }
+            console.log($('#isOccupied').val())
+        })
+    })
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+
+</html>

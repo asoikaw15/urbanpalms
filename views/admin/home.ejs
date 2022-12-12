@@ -1,0 +1,56 @@
+<%- include('../boilerplate/header.ejs') %>
+    <div class="container admin-home">
+        <h1 align="center">List of Properties</h1>
+        <a href="/admin/add-room" class="btn btn-secondary">Add a space</a>
+        <div class="table table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th>Property Name</th>
+                        <th>Address</th>
+                        <th>Price(per night)</th>
+                        <th>Rating</th>
+                        <th>Main Image</th>
+                        <th>Occupied?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (let space of spaces) {%>
+                        <tr>
+                            <td>
+                                <button class="btn btn-danger me-2" title="Remove"><i
+                                        class="fa-solid fa-xmark"></i></button><a href="/admin/edit/<%=space.id%>"
+                                    class="btn btn-secondary" title="Edit"><i
+                                        class="fa-solid fa-pen-to-square"></a></i><br>
+                                <%=space.name%>
+                            </td>
+                            <td>
+                                <%=space.address%>
+                            </td>
+                            <td>
+                                $ <%=space.pricePerNight%>
+                            </td>
+                            <td>
+                                <%=space.rating%>/5.00
+                            </td>
+                            <td align="center">
+                                <img src="<%=space.image[0].url%>" alt="main image">
+                            </td>
+                            <% if(space.isOccupied===true){%>
+                                <td class="is-occupied">
+                                    Yes
+                                </td>
+                                <%} else {%>
+                                    <td class="is-occupied">
+                                        No
+                                    </td>
+                                    <%}%>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <%- include('../boilerplate/footer.ejs') %>
